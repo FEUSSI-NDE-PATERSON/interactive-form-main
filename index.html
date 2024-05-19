@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | interactive card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col sm:flex-row h-screen ">
+  <div class="relative h-[30vh] w-[100vw] sm:w-[35vw]  sm:h-[100vh] " id="imgBg">
+
+  </div>
+  <div class="flex ml-[15px] mt-[100px] sm:mt-[0px] justify-center items-center  bg-white h-[70vh]  sm:w-[65vw] sm:h-[100vh]" id="valid">
+     <form action="" class="flex flex-col justify-center w-[330px]  p-5" onsubmit="addDetails()">
+      <div class="flex flex-col">
+         <label for="CardHoldefName">CardHolder Name</label>
+         <input type="text" value="" placeholder="e.g Jane Applessed" id="cardholdername"  required/>
+      </div>
+      <div class="flex flex-col">
+        <label for="CardNumber">CardNumber</label>
+         <input type="number" value="" placeholder="e.g 1234 5678 9123 0000" id="cardnumber" required/>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col">
+          <label for="Exp.Date(MM/YY)">
+             Exp.DATE(MM/YY)
+          </label>
+          <div class="flex">
+            <input type="number" name="" value="" id="year" placeholder="month" class="mx-1 w-[60px]" required>
+            <input type="number" name="" value="" id="month" placeholder="year" class="mx-1 w-[60px]" required>
+
+          </div>
+        </div>
+        <div class="flex flex-col mt-1 ml-1">
+          <label for="cvc">cvc</label>
+          <input type="number" name="" placeholder="eg.123" id="amount-value" value="" class="w-[100%]" required>
+
+        </div>
+      </div>
+      <button class="flex-1 rounded-lg py-1 px-3 text-white font-bold  bg-[#600594]" type="submit"  id="button">Confirm</button>
+     </form>
+  </div>
+
+
+  <div class="absolute flex flex-col  -top-[40px] left-[50px] sm:top-[150px] sm:left-[330px]">
+    <div class="bgFront relative">
+      <img src="/images/card-logo.svg" alt="" class="absolute h-[30px] top-[65px] left-[12px]">
+
+      <p class="absolute top-[130px] text-white ml-3 -mt-2 text-2xl" id="CardnumberInput">0000000000000</p>
+      <div class="text-white font-bold ">
+        <p class="absolute top-[150px] ml-2 left-2 mt-3" id="Name">Jane Applessed</p>
+        <p class="absolute top-[150px] mr-2 right-0 mt-3"><span id="monthValue">00</span><span id="yearValue">00</span></p>
+      </div>
+    </div>
+    <div class="bgBack ml-[25px] -mt-[90px] relative ">
+      <p class="absolute text-[#dedddf] top-[114px] right-[31px]" id="amount">000</p>
+    </div>
+  </div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

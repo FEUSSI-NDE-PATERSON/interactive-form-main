@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    overflow-x: hidden !important;
+}
+#imgBg{
+    background-image: url('/images/bg-main-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgFront{
+    background-image: url('/images/bg-card-front.png');
+    background-size: contain;
+    background-position: center;
+    height:250px !important;
+    width:250px;
+    background-repeat: no-repeat;
+    padding:3px;
+}
+.bgBack{
+    background-image: url('/images/bg-card-back.png');
+    background-size: contain;
+    background-position: center;
+    width:250px;
+    height:250px;
+    background-repeat: no-repeat;
+    padding:3px;
+}
+form div,form div label{
+    margin:3px 0px 3px 0px;
+}
+input{
+    background: transparent;
+    border:2px solid #dedddf !important;
+    outline: none !important;
+    padding: 10px !important;
+    border-radius: 5px !important ;
+}
